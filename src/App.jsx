@@ -6,7 +6,10 @@ function App() {
   // Renderiza el componente
   return (
     <>
-      <h1>Lista de tareas</h1>
+      <div className="App-header">
+        <img src="./src/assets/favicon.png" alt="Icono" />
+        <h1>Lista de tareas</h1>
+      </div>
       <TodoList />
     </>
   )
