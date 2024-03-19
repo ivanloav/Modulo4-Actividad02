@@ -1,7 +1,7 @@
 .completed {
     text-decoration: line-through;
     color: #908e8e;
-    background: linear-gradient(to left, rgba(25, 116, 25, 0.745), rgba(0, 255, 157, 0.912)); /* Agrega un gradiente de fondo */
+    background: linear-gradient(to left, rgba(25, 116, 25, 0.745), rgba(0, 255, 157, 0.912));
 }
   
   .addItem {
@@ -15,7 +15,7 @@
   
   .addItem span, .editInput {
     text-align: start;
-    width: 21vw;
+    width: 40vw;
     padding: 10px;
     font-size: 1.25rem;
     font-weight: bold;
@@ -39,7 +39,8 @@
   }
 
   .addItem button {
-    background-color: #e9f085f8;
+    background-color: #73eb71;
+    border: 2px solid white;
     padding: 10px;
     margin: 10px;
     width: 2vw;
@@ -53,35 +54,26 @@
 
   @media only screen and (768px <= width <= 1024px) {
     .addItem span, .editInput {
-      width: 80vw;
+      width: 55vw;
     }
-
-    .custom-checkbox {
-        height: 30px;
-        width: 40px;
-      }
-    
+   
     .addItem button {
         background-color: #e9f085f8;
         padding: 10px;
         margin: 7px;
-        width: 8vw;
+        width: 6vw;
     }
 }
   @media only screen and (max-width: 768px) {
     .addItem span, .editInput {
-      width: 50vw;
+      width: 45vw;
+      font-size: 0.85rem;
     }
-
-    .custom-checkbox {
-        height: 23px;
-        width: 25px;
-      }
 
     .addItem button {
         background-color: #e9f085f8;
-        padding: 10px;
-        margin: 7px;
+        padding: 7px;
+        margin: 5px;
         width: 10vw;
     }
 }
