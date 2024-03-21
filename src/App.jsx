@@ -10,6 +10,7 @@ function App() {
         <img src="./src/assets/favicon.png" alt="Icono" />
         <h1>Lista de tareas</h1>
       </div>
+      
       <TodoList />
     </>
   )
