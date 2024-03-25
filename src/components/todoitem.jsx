@@ -1,5 +1,6 @@
 import './todoitem.css';                  // Importa los estilos del componente TodoItem
-import React, { useState } from 'react';  // Importa React y el hook useState de React
+import { useState } from 'react';         // Importa el hook useState de React
+import PropTypes from 'prop-types';       // Importa PropTypes
 
 // Define y exporta la función TodoItem
 export function TodoItem({ todo, onDelete, onComplete, onUpdate }) {
@@ -57,3 +58,17 @@ export function TodoItem({ todo, onDelete, onComplete, onUpdate }) {
     </div>
   );
 }
+
+// Define las propiedades del componente TodoItem
+// tip: esta validacion la tendriamos gratis con TypeScript
+// en js se hace definiendo la propiedad PropTypes al componente
+TodoItem.PropTypes = {
+  todo: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    text: PropTypes.string.isRequired,
+    isCompleted: PropTypes.bool.isRequired
+  }),
+  onDelete: PropTypes.func.isRequired,
+  onComplete: PropTypes.func.isRequired,
+  onUpdate: PropTypes.func.isRequired
+};
